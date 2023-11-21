@@ -8,10 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($
     $username = $_POST["username"];
     $password = $_POST["password"];
     
-    $user->loginAdmin($username, $password);
+    $user->loginUser($username, $password);
 
     if ($user->isLoggedIn()) {
-        header("Location: dashboard.php");
+        header("Location: evenimente.php");
         exit();
     } else {
         header("Refresh:0");

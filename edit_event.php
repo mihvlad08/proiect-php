@@ -22,6 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <title>Edit Event</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         .login-form-container { display: none }
         .edit-container {
             background: url('./background-dark.jpg') no-repeat;
@@ -61,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <input type="text" class="textarea" id="despre" name="despre" value="<?php echo $eventData['despre']; ?>"><br>
 
         <label for="data_si_ora">Data si ora:</label>
-        <input type="datetime" class="textarea" id="data_si_ora" name="data_si_ora" value="<?php echo $eventData['data_si_ora']; ?>"><br>
+        <input type="date" class="textarea" id="data_si_ora" name="data_si_ora" value="<?php echo $eventData['data_si_ora']; ?>"><br>
 
         <label for="sponsors">Sponsori:</label>
         <input type="text" class="textarea" id="sponsors" name="sponsors" value="<?php echo $eventData['sponsors']; ?>"><br>

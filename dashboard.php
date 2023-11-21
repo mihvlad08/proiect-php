@@ -12,6 +12,10 @@ $database = new Database();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
         .login-form-container { display: none }
         .table-row { dispay: block }
         .ul > * {
@@ -63,7 +67,7 @@ $database = new Database();
         <input type="text" id="location" name="location" required><br>
 
         <label for="sponsors">Sponsors:</label>
-        <input type="text" id="sponsors" name="sponsors"><br>
+        <input type="text" id="sponsors" name="sponsors" required><br>
 
         <input type="submit" value="Create Event">
     </form>
